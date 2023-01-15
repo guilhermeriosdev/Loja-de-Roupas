@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/ghaf logo.png" />
+
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+    
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/ghaf logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./produtos/Produtos.html">Produtos</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Fale Conosco</a></li>
+                    <li><a href="/accountpage.html">Sua Conta</a></li>
+                </ul>
+            </nav>
+            <a><div class="menu-openner"><span>0</span>🛒</a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="produtospagina">
+
+    <!-- modelos de Peças na lista e no carrinho -->
+    <div class="models">
+
+        <!-- Peças na lista -->
+        <div class="peças-item">
+            <a href="">
+                <div class="peças-item--img"><img src="" /></div>
+                <div class="peças-item--add">+</div>
+            </a>
+            <div class="peças-item--price">R$ --</div>
+            <div class="peças-item--name">--</div>
+            <div class="peças-item--desc">--</div>
+        </div>
+
+        <!-- Peças no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    
+        
+    
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Produtos</h2>
+        <br><br><br>
+
+        <div class="peças-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+<aside>
+    <div class="cart--area">
+        <div class="menu-closer">❌</div>
+        <h1>Carrinho</h1>
+        <div class="cart"></div>
+        <div class="cart--details">
+            <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem desconto">
+                <span>Desconto</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem total big">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--finalizar">Finalizar a compra</div>
+        </div>
+    </div>
+</aside>
+<!-- /aside do carrinho -->
+
+    <!-- janela modal .PeçasWindowArea -->
+    <div class="peçasWindowArea">
+        <div class="peçasWindowBody">
+            <div class="peçasInfo--cancelMobileButton">Voltar</div>
+            <div class="peçasBig">
+                <img src="" />
+            </div>
+            <div class="peçasInfo">
+                <h1>--</h1>
+                <div class="peçasInfo--desc">--</div>
+                <div class="peçasInfo--sizearea">
+                    <div class="peçasInfo--sector">Tamanho</div>
+                    <div class="peçasInfo--sizes">
+                        <div data-key="P" class="peçasInfo--size">S <span>--</span></div>
+                        <div data-key="M" class="peçasInfo--size">M <span>--</span></div>
+                        <div data-key="G" class="peçasInfo--size selected">L <span>--</span></div>
+                        <div data-key="GG" class="peçasInfo--size">XL <span>--</span></div>
+                    </div>
+                </div>
+                <div class="peçasInfo--pricearea">
+                    <div class="peçasInfo--sector">Preço</div>
+                    <div class="peçasInfo--price">
+                        <div class="peçasInfo--actualPrice">R$ --</div>
+                        <div class="peçasInfo--qtarea">
+                            <button class="peçasInfo--qtmenos">-</button>
+                            <div class="peçasInfo--qt">1</div>
+                            <button class="peçasInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="peçasInfo--addButton">Adicionar ao carrinho</div>
+                <div class="peçasInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- /janela modal .peçasWindowArea -->
+</div>
+
+    <script src="peças.js"></script>
+    <script src="/produtos/js/script.js"></script>
+</body>
+</html>

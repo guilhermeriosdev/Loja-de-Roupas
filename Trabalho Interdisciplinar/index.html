@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> G-haf | Home </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/ghaf logo.png" width="250px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./produtos/Produtos.html">Produtos</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Fale Conosco</a></li>
+                        <li><a href="accountpage.html">Sua Conta</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1> Feito especialmente <br> para o seu estilo!</h1>
+                    <center><a href="./produtos/Produtos.html" class="btn"> Conheça Já!</a></center>
+                </div>
+                <div class="col-2">
+                    <img src="/ROUPAS/P1.png" width="450px">
+
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+
+    <div class="small-container">
+        <h2 class="title"> Mais Vendidos </h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="/produtos/Produtos.html"><img src="/ROUPAS/CALCA_A.png"></a>
+                <a href="/produtos/Produtos.html">
+                    <h4>Calça Cargo Preto</h4>
+                </a>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>R$300.00</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/produtos/Produtos.html"><img src="/ROUPAS/CAMISETA_B.png"></a>
+                <a href="/produtos/Produtos.html">
+                    <h4>Camiseta Azul</h4>
+                </a>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>R$150.00</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/produtos/Produtos.html"><img src="/ROUPAS/CAMISETA_A.png"></a>
+                <a href="/produtos/Produtos.html">
+                    <h4>Camiseta Gráfica</h4>
+                </a>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>R$150.00</p>
+            </div>
+
+            <div class="col-4">
+                <a href="/produtos/Produtos.html"><img src="/ROUPAS/MOLETOM_A.png"></a>
+                <a href="/produtos/Produtos.html">
+                    <h4>Moletom Preto</h4>
+                </a>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>R$300.00</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Conheça o nosso App</h3>
+                    <p>Disponível para Android e IOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <h3>Sua melhor escolha</h3>
+                    <img src="images/ghaf logo.png" width="300px">
+                    <p>Nosso propósito é garantir que, sustentávelmente, criemos uma família em torno Lorem ipsum, dolor sit.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Nos acompanhe</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2022 - G-Haf Corporation</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else
+
+            {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
